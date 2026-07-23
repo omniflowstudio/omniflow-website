@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,13 +13,13 @@ export default function Header() {
     { label: 'Services', href: '#services' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Team', href: '#team' },
+    { label: 'How We Build', href: '#how-we-build' },
     { label: 'FAQ', href: '#faq' },
   ]
 
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -26,10 +27,15 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold">OF</span>
+          <div className="w-10 h-10 relative">
+            <Image
+              src="/logo.png"
+              alt="Omni Flow Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          <span className="text-xl font-bold text-foreground hidden sm:inline">Omni Flow</span>
         </motion.div>
 
         {/* Desktop Navigation */}

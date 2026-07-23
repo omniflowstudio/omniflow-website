@@ -14,10 +14,10 @@ const portfolio = [
   },
   {
     id: 2,
-    title: 'SaaS Dashboard',
-    category: 'Web App',
-    description: 'Analytics dashboard for data visualization and reporting',
-    image: '📊',
+    title: 'Customized Landing Pages',
+    category: 'Web Design',
+    description: 'High-converting landing pages tailored to specific campaigns and audiences',
+    image: '📄',
     link: '#',
   },
   {
@@ -105,13 +105,7 @@ export default function Portfolio() {
                   {project.category}
                 </p>
                 <h3 className="text-lg font-bold text-foreground mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
-
-                {/* Link */}
-                <div className="flex items-center gap-2 text-primary hover:text-accent transition-colors text-sm font-medium group-hover:gap-3 transition-all">
-                  View Case Study
-                  <ExternalLink className="w-4 h-4" />
-                </div>
+                <p className="text-sm text-muted-foreground">{project.description}</p>
               </div>
 
               {/* Hover overlay */}

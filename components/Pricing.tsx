@@ -1,55 +1,49 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check, MessageCircle, ArrowRight } from 'lucide-react'
 
 const plans = [
   {
     name: 'Starter',
     description: 'Perfect for small projects and startups',
-    price: '$2,999',
-    period: 'per project',
     features: [
       'Responsive Website',
       'Up to 5 Pages',
       'Basic SEO Optimization',
-      '1 Month Support',
       'Performance Optimization',
       'Mobile Responsive Design',
+      '1 Month Support',
     ],
     highlighted: false,
   },
   {
     name: 'Professional',
     description: 'Ideal for growing businesses',
-    price: '$5,999',
-    period: 'per project',
     features: [
       'Everything in Starter',
       'Up to 15 Pages',
       'Advanced SEO Optimization',
       'CMS Integration',
-      '3 Months Support',
       'E-commerce Ready',
       'Analytics & Tracking',
       'Social Media Integration',
+      '3 Months Support',
     ],
     highlighted: true,
   },
   {
     name: 'Enterprise',
     description: 'For complex, large-scale solutions',
-    price: 'Custom',
-    period: 'tailored pricing',
     features: [
       'Everything in Professional',
       'Unlimited Pages',
       'Custom Integrations',
-      '6+ Months Support',
       'API Development',
       'Advanced Analytics',
       'Dedicated Support Team',
       'Performance Monitoring',
+      '6+ Months Support',
     ],
     highlighted: false,
   },
@@ -104,13 +98,7 @@ export default function Pricing() {
 
               {/* Content */}
               <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
-              <p className="text-sm text-muted-foreground mb-6">{plan.description}</p>
-
-              {/* Price */}
-              <div className="mb-8">
-                <div className="text-4xl font-bold text-primary mb-1">{plan.price}</div>
-                <p className="text-sm text-muted-foreground">{plan.period}</p>
-              </div>
+              <p className="text-sm text-muted-foreground mb-8">{plan.description}</p>
 
               {/* Features */}
               <ul className="space-y-4 flex-1 mb-8">
@@ -124,7 +112,7 @@ export default function Pricing() {
 
               {/* CTA Button */}
               <a
-                href={`https://wa.me/919999999999?text=Hi%20Omni%20Flow%2C%20I%27m%20interested%20in%20the%20${plan.name}%20plan`}
+                href={`https://wa.me/923033393222?text=Hi%20Omni%20Flow%2C%20I%27m%20interested%20in%20the%20${plan.name}%20plan%20and%20would%20like%20pricing%20information`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 text-center ${
@@ -133,8 +121,8 @@ export default function Pricing() {
                     : 'border border-primary/50 text-foreground hover:bg-primary/10'
                 }`}
               >
-                Get Started
-                <ArrowRight className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
+                Get Pricing
               </a>
             </motion.div>
           ))}
@@ -148,15 +136,17 @@ export default function Pricing() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-border/30"
         >
-          <p className="text-muted-foreground mb-4">
-            All plans include free consultation, unlimited revisions during development, and 30-day post-launch support.
+          <p className="text-muted-foreground mb-6">
+            All plans include free consultation, unlimited revisions during development, and post-launch support. Contact us on WhatsApp for custom quotes and package details tailored to your specific needs.
           </p>
           <a
-            href="#faq"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
+            href={`https://wa.me/923033393222?text=Hi%20Omni%20Flow%2C%20I%20would%20like%20to%20discuss%20pricing%20and%20packages`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
           >
-            Have questions? Check our FAQ
-            <ArrowRight className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4" />
+            Get Custom Quote
           </a>
         </motion.div>
       </div>

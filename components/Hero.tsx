@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-border/30">
             {[
               { number: '100+', label: 'Projects' },
-              { number: '50+', label: 'Happy Clients' },
+              { number: '50+', label: 'Global Clients' },
               { number: '5+', label: 'Years Experience' },
             ].map((stat, i) => (
               <motion.div

@@ -9,7 +9,7 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Pricing from '@/components/Pricing'
 import Portfolio from '@/components/Portfolio'
-import Team from '@/components/Team'
+import HowWeBuild from '@/components/HowWeBuild'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import CTA from '@/components/CTA'
@@ -24,7 +24,7 @@ export default function Home() {
       <Services />
       <Pricing />
       <Portfolio />
-      <Team />
+      <HowWeBuild />
       <Testimonials />
       <FAQ />
       <CTA />

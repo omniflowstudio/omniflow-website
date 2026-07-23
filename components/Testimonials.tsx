@@ -5,27 +5,51 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'James Wilson',
-    company: 'Tech Startup Inc',
+    name: 'Ali Kazmi',
+    company: 'Kazmi Digital Marketing',
     role: 'CEO',
-    content: 'Omni Flow transformed our digital presence. Their team delivered an exceptional website that increased our conversions by 150%.',
+    content: 'Omni Flow completely transformed our online presence. Their team delivered an outstanding website that increased our leads by 200% within the first month.',
     avatar: '👨‍💼',
     rating: 5,
   },
   {
-    name: 'Lisa Martinez',
-    company: 'Fashion Boutique Co',
+    name: 'Ubaid Saleem',
+    company: 'Saleem & Associates',
+    role: 'Managing Partner',
+    content: 'Exceptional work from start to finish. The e-commerce platform they built for us is fast, secure, and user-friendly. Our sales have tripled!',
+    avatar: '👨‍💻',
+    rating: 5,
+  },
+  {
+    name: 'Umer Sheikh',
+    company: 'Sheikh Trading Group',
     role: 'Founder',
-    content: 'The mobile app they built for us is intuitive and beautiful. Our customers love the seamless shopping experience.',
+    content: 'Professional, reliable, and highly creative. Omni Flow understood our vision perfectly and delivered beyond our expectations. Highly recommended!',
+    avatar: '👨‍💼',
+    rating: 5,
+  },
+  {
+    name: 'Mariam Khan',
+    company: 'Khan Fashion House',
+    role: 'Creative Director',
+    content: 'Working with Omni Flow was amazing. They created a stunning website that perfectly represents our brand. The design is gorgeous and conversion rates are up significantly.',
     avatar: '👩‍💼',
     rating: 5,
   },
   {
-    name: 'David Thompson',
-    company: 'Enterprise Solutions',
+    name: 'Michael Johnson',
+    company: 'TechCore Solutions USA',
     role: 'CTO',
-    content: 'Professional, reliable, and innovative. Omni Flow went above and beyond to deliver exactly what we needed.',
+    content: 'Outstanding technical expertise and customer service. Omni Flow delivered our complex SaaS platform on time and exceeded all our technical requirements.',
     avatar: '👨‍💻',
+    rating: 5,
+  },
+  {
+    name: 'Sarah Williams',
+    company: 'Williams Creative Agency',
+    role: 'President',
+    content: 'Omni Flow is a game-changer for our agency. Their innovative solutions and attention to detail have impressed all our clients. We work with them on every major project now.',
+    avatar: '👩‍💼',
     rating: 5,
   },
 ]
@@ -55,7 +79,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
