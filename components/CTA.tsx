@@ -34,7 +34,7 @@ export default function CTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href={`https://wa.me/919999999999?text=Hi%20Omni%20Flow%2C%20I%27m%20ready%20to%20start%20my%20project`}
+              href={`https://wa.me/923033393222?text=Hi%20Omni%20Flow%2C%20I%27m%20ready%20to%20start%20my%20project`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
