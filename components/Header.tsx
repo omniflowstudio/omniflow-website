@@ -27,10 +27,10 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <div className="w-10 h-10 relative">
+          <div className="w-40 h-12 relative">
             <Image
               src="/logo.png"
-              alt="Omni Flow Logo"
+              alt="Omni Flow - Web Design, Development & Digital Marketing Agency"
               fill
               className="object-contain"
               priority
