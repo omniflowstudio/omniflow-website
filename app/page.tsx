@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
 import Services from '@/components/Services'
 import Pricing from '@/components/Pricing'
 import Portfolio from '@/components/Portfolio'
@@ -21,6 +22,7 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Header />
       <Hero />
+      <About />
       <Services />
       <Pricing />
       <Portfolio />

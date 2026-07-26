@@ -106,12 +106,41 @@ export default function RootLayout({
     },
   }
 
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Omni Flow',
+    description: 'Web design, development, mobile app development, and digital marketing agency',
+    url: baseUrl,
+    telephone: '+923033393222',
+    priceRange: 'Custom quotes',
+    areaServed: 'Worldwide',
+    serviceType: [
+      'Web Design',
+      'Web Development',
+      'Mobile App Development',
+      'Digital Marketing',
+      'SMM',
+      'Workflow Automation',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      telephone: '+923033393222',
+      availableLanguage: 'en',
+    },
+  }
+
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
       <body className="antialiased bg-background text-foreground">
