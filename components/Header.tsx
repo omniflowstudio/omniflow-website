@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -27,7 +27,7 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <div className="w-48 h-14 relative">
+          <div className="w-72 h-20 relative">
             <Image
               src="/logo.png"
               alt="Omni Flow - Web Design, Development & Digital Marketing Agency"
