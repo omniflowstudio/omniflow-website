@@ -45,7 +45,7 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-primary/20 to-accent/10 border-2 border-primary/50 rounded-2xl p-12 mb-12 text-center"
+          className="bg-gradient-to-br from-primary/20 to-accent/10 border-2 border-primary/50 rounded-2xl p-12 mb-12 text-center animate-pulse-glow"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Let&apos;s Discuss Your Project

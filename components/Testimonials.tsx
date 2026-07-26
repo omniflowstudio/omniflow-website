@@ -7,49 +7,49 @@ const testimonials = [
   {
     name: 'Ali Kazmi',
     company: 'Kazmi Digital Marketing',
-    role: 'CEO',
     content: 'Omni Flow completely transformed our online presence. Their team delivered an outstanding website that increased our leads by 200% within the first month.',
-    avatar: '👨‍💼',
+    initials: 'AK',
+    bgColor: 'bg-blue-500',
     rating: 5,
   },
   {
     name: 'Ubaid Saleem',
     company: 'Saleem & Associates',
-    role: 'Managing Partner',
     content: 'Exceptional work from start to finish. The e-commerce platform they built for us is fast, secure, and user-friendly. Our sales have tripled!',
-    avatar: '👨‍💻',
+    initials: 'US',
+    bgColor: 'bg-purple-500',
     rating: 5,
   },
   {
     name: 'Umer Sheikh',
     company: 'Sheikh Trading Group',
-    role: 'Founder',
     content: 'Professional, reliable, and highly creative. Omni Flow understood our vision perfectly and delivered beyond our expectations. Highly recommended!',
-    avatar: '👨‍💼',
+    initials: 'US',
+    bgColor: 'bg-green-500',
     rating: 5,
   },
   {
     name: 'Mariam Khan',
     company: 'Khan Fashion House',
-    role: 'Creative Director',
     content: 'Working with Omni Flow was amazing. They created a stunning website that perfectly represents our brand. The design is gorgeous and conversion rates are up significantly.',
-    avatar: '👩‍💼',
+    initials: 'MK',
+    bgColor: 'bg-pink-500',
     rating: 5,
   },
   {
     name: 'Michael Johnson',
     company: 'TechCore Solutions USA',
-    role: 'CTO',
     content: 'Outstanding technical expertise and customer service. Omni Flow delivered our complex SaaS platform on time and exceeded all our technical requirements.',
-    avatar: '👨‍💻',
+    initials: 'MJ',
+    bgColor: 'bg-yellow-500',
     rating: 5,
   },
   {
     name: 'Sarah Williams',
     company: 'Williams Creative Agency',
-    role: 'President',
     content: 'Omni Flow is a game-changer for our agency. Their innovative solutions and attention to detail have impressed all our clients. We work with them on every major project now.',
-    avatar: '👩‍💼',
+    initials: 'SW',
+    bgColor: 'bg-orange-500',
     rating: 5,
   },
 ]
@@ -87,8 +87,8 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="group bg-card border border-primary/10 rounded-xl p-8 hover:border-primary/30 transition-all duration-300"
+              whileHover={{ y: -8, boxShadow: '0 0 30px rgba(59, 130, 246, 0.2)' }}
+              className="group bg-card border border-primary/10 rounded-xl p-8 hover:border-primary/50 transition-all duration-300"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-4">
@@ -107,10 +107,12 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-6 border-t border-border/30">
-                <div className="text-4xl">{testimonial.avatar}</div>
+                <div className={`w-12 h-12 rounded-full ${testimonial.bgColor} flex items-center justify-center flex-shrink-0`}>
+                  <span className="text-white font-bold text-sm">{testimonial.initials}</span>
+                </div>
                 <div>
                   <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role} at {testimonial.company}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                 </div>
               </div>
             </motion.div>

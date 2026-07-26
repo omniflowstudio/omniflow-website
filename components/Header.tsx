@@ -27,7 +27,7 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <div className="w-40 h-12 relative">
+          <div className="w-40 h-12 relative bg-transparent">
             <Image
               src="/logo.png"
               alt="Omni Flow - Web Design, Development & Digital Marketing Agency"
