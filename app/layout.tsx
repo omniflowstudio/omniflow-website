@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Omni Flow | Web Design, Development & Digital Marketing Agency',
   description: 'Custom website design and development, digital marketing, workflow automation, and SMM services for businesses worldwide. Get your free consultation today.',
   keywords: 'website design, web development, digital marketing, SMM, workflow automation, custom website design, business website',
-  generator: 'v0.app',
+  generator: 'Omni Flow',
   robots: 'index, follow',
   authors: [
     {
