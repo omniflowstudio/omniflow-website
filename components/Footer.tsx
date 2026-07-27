@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:hello@omniflow.com" className="hover:text-foreground transition-colors">hello@omniflow.com</a>
+                <a href="mailto:omniflowstudio1@gmail.com" className="hover:text-foreground transition-colors">omniflowstudio1@gmail.com</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>123 Tech Street, Digital City, DC 12345</span>
+                <span>Phase 2, DHA, Lahore, Pakistan</span>
               </li>
             </ul>
           </motion.div>
