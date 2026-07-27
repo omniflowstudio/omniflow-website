@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Share2, Share, Mail, MapPin, Phone, Heart } from 'lucide-react'
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -106,51 +106,23 @@ export default function Footer() {
           </motion.p>
 
           {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="flex items-center gap-4"
-          >
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-              aria-label="Facebook"
-            >
-              <Share2 className="w-4 h-4" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-              aria-label="Twitter"
-            >
-              <Heart className="w-4 h-4" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Share2 className="w-4 h-4" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-              aria-label="Instagram"
-            >
-              <Share className="w-4 h-4" />
-            </a>
-          </motion.div>
-
+         <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.5, delay: 0.1 }}
+  viewport={{ once: true }}
+  className="flex items-center gap-4"
+>
+  
+    href="https://www.instagram.com/omniflow.studio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+    aria-label="Instagram"
+  >
+    <Instagram className="w-4 h-4" />
+  </a>
+</motion.div>
           {/* Links */}
           <motion.div
             initial={{ opacity: 0 }}
