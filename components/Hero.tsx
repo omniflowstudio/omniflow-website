@@ -16,12 +16,10 @@ export default function Hero() {
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background gradient orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-50" />
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl opacity-50" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -65,25 +63,16 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            
-              href="#services"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
-            >
+            <a href="#services" className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium">
               Explore Services
               <ArrowRight className="w-5 h-5" />
             </a>
-            
-              href={`https://wa.me/923033393222?text=Hi%20Omni%20Flow%2C%20I%20would%20like%20to%20discuss%20my%20project`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary/50 text-foreground rounded-lg hover:bg-primary/10 transition-colors font-medium"
-            >
+            <a href={`https://wa.me/923033393222?text=Hi%20Omni%20Flow%2C%20I%20would%20like%20to%20discuss%20my%20project`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary/50 text-foreground rounded-lg hover:bg-primary/10 transition-colors font-medium">
               Let&apos;s Chat
               <ArrowRight className="w-5 h-5" />
             </a>
           </motion.div>
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-border/30">
             <Counter number={100} label="Projects" delay={0.5} />
             <Counter number={50} label="Global Clients" delay={0.6} />
@@ -91,7 +80,6 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right Visual — shown on mobile too, order-first so it appears above text on small screens */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -114,7 +102,6 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
           </motion.div>
 
-          {/* Floating card */}
           <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
